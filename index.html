@@ -16,7 +16,7 @@ Families: With love, the Sarkar families
 RSVP: +91 9434509715 (Swapan kr. Sarkar)
 Haldi | 26 Nov 2026 | Thursday | Own House, Sepoy Bazar, Midnapore
 Wedding | 26 Nov 2026 | Thursday | Shree Bishnu Mandir, Belda & Shree Banquet Hall, Midnapore
-Reception | 26 Nov 2026 | Thursday | 7:00 PM | Sree Banquet and Lodge
+Wedding Reception | 26 Nov 2026 | Thursday | 7:00 PM | Sree Banquet and Lodge
 -->
 <style>
 /* ===== BASE ===== */
@@ -206,7 +206,7 @@ footer h2{margin:8px 0}
  <ol class="tl">
   <li class="rv"><i>1</i><h3>Haldi</h3><p>26 Nov 2026 &middot; Thursday</p><p>Own House, Sepoy Bazar, Midnapore</p></li>
   <li class="rv"><i>2</i><h3>Wedding</h3><p>26 Nov 2026 &middot; Thursday</p><p>Shree Bishnu Mandir, Belda &amp; Shree Banquet Hall, Midnapore</p></li>
-  <li class="rv"><i>3</i><h3>Reception</h3><p>26 Nov 2026 &middot; Thursday &middot; 7:00 PM</p><p>Sree Banquet and Lodge</p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Sree%20Banquet%20and%20Lodge" target="_blank" rel="noopener">Get Directions</a></li>
+  <li class="rv"><i>3</i><h3>Wedding Reception</h3><p>26 Nov 2026 &middot; Thursday &middot; 7:00 PM</p><p>Sree Banquet and Lodge</p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Sree%20Banquet%20and%20Lodge" target="_blank" rel="noopener">Get Directions</a></li>
  </ol>
 </section>
 
@@ -270,7 +270,7 @@ $("#cal").onclick=()=>{
  const L=[].concat(["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Wedding//EN"],
  ev("haldi","Haldi","DTSTART;VALUE=DATE:20261126","DTEND;VALUE=DATE:20261127","Own House, Sepoy Bazar, Midnapore"),
  ev("wedding","Wedding","DTSTART;VALUE=DATE:20261126","DTEND;VALUE=DATE:20261127","Shree Bishnu Mandir, Belda & Shree Banquet Hall, Midnapore"),
- ev("reception","Reception","DTSTART:20261126T133000Z","DTEND:20261126T163000Z","Sree Banquet and Lodge"),["END:VCALENDAR"]);
+ ev("reception","Wedding Reception","DTSTART:20261126T133000Z","DTEND:20261126T163000Z","Sree Banquet and Lodge"),["END:VCALENDAR"]);
  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([L.join("\r\n")],{type:"text/calendar"}));a.download="wedding-events.ics";document.body.appendChild(a);a.click();a.remove()};
 
 /* ===== RSVP + LANTERNS ===== */
