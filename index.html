@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="lock">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Shouvik Panja &amp; Pratiksha Sarkar | Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Great+Vibes&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<!--
+MY DETAILS (exactly as given)
+Bride: Pratiksha Sarkar | Groom: Shouvik Panja | Order: Groom & Bride | Initials: S&P
+Blessing: Shree Ganeshaya Namah | Subtitle: Wedding Invitation
+Main date: 28th November, 2026, 7:00 PM IST
+Venue: Parinoy The Banquet
+Address: N.H-60, beside Indian Oil Pump, Dharma, Habibpur, Midnapore, West Bengal 721101
+Maps: https://maps.app.goo.gl/ygKmYHynEQ2tuws1A
+Families: With love, the Panja families
+RSVP: +91 9434414260 (Aditya Kr. Panja)
+Haldi | 26 Nov 2026 | Thursday | Own House, Sepoy Bazar, Midnapore
+Wedding | 26 Nov 2026 | Thursday | Shree Bishnu Mandir, Belda & Shree Banquet Hall, Midnapore
+Reception | 28 Nov 2026 | Saturday | 7:00 PM | Parinoy The Banquet, Dharma, Midnapore
+-->
+<style>
+/* ===== BASE ===== */
+:root{--iv:#FBF4E6;--bl:#F3DFD2;--rd:#8E1B2B;--mr:#5E0F1C;--gd:#B8893B;--lg:#E9CF93;--ink:#3A1A1A;--pr:#B01E2F}
+*{box-sizing:border-box;margin:0}
+html,body{overflow-x:clip}
+html.lock{overflow:hidden}
+body{position:relative;background:var(--iv);color:var(--ink);font:400 16px/1.6 Jost,sans-serif;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+h1,h2,h3,.cd b{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--rd)}
+a,button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gd);outline-offset:3px}
+.sc{max-width:920px;margin:auto;padding:72px 20px;text-align:center;position:relative}
+.eb{letter-spacing:.28em;text-transform:uppercase;font-size:14px;color:var(--gd);font-weight:500}
+h2{font-size:clamp(34px,9vw,52px);margin:6px 0 28px}
+.orn{display:block;margin:10px auto;width:150px;height:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;margin:6px;border-radius:30px;border:1.5px solid var(--gd);background:var(--rd);color:var(--iv);text-decoration:none;cursor:pointer;letter-spacing:.06em}
+.btn.o{background:transparent;color:var(--rd)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease;transition-delay:calc(var(--i,0)*120ms)}
+.rv.in{opacity:1;transform:none}
+.card{background:rgba(255,250,240,.88);border:1px solid var(--gd);border-radius:18px;padding:22px 18px}
+/* ===== OPENING ===== */
+#open{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at 50% 40%,#7d1a2c,var(--mr) 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;color:var(--lg);transition:opacity .5s ease}
+#open.fade{opacity:0}
+#open p{letter-spacing:.2em;text-transform:uppercase;font-size:14px}
+.env{position:relative;width:min(300px,80vw);height:min(200px,53vw);background:#f3e2c0;border:2px solid var(--gd);border-radius:6px;perspective:700px}
+.flap{position:absolute;left:0;right:0;top:0;height:60%;background:#e6cf9c;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .7s ease .35s;z-index:2}
+.go .flap{transform:rotateX(180deg)}
+#seal{position:absolute;left:50%;top:60%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;border:2px solid var(--lg);background:radial-gradient(circle at 35% 30%,#d33a4c,var(--rd));color:var(--lg);font:600 20px "Cormorant Garamond",serif;cursor:pointer;z-index:3;transition:transform .4s ease,opacity .5s ease .6s}
+#seal::after{content:"";position:absolute;inset:-12px;border-radius:50%;background:radial-gradient(circle,rgba(255,214,120,.9),transparent 70%);opacity:0;transition:opacity .4s;z-index:-1}
+.go #seal{transform:scale(1.15);opacity:0}.go #seal::after{opacity:1}
+.ring{position:absolute;left:50%;top:60%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;border:2px solid var(--lg);opacity:0;pointer-events:none}
+.go .ring{animation:rg 1s ease-out .2s both}
+@keyframes rg{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(9)}}
+.sp{position:absolute;left:50%;top:60%;width:8px;height:8px;background:var(--lg);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);opacity:0}
+.fl{position:absolute;inset:0;background:#fff8e6;opacity:0;pointer-events:none}
+.go~.fl{animation:fh .6s ease .9s both}
+@keyframes fh{0%{opacity:0}40%{opacity:.5}100%{opacity:0}}
+/* ===== HERO ===== */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px;overflow:clip;background:linear-gradient(var(--iv),var(--bl))}
+.hb{position:absolute;inset:-12% 0;display:flex;align-items:center;justify-content:center;opacity:.5;will-change:transform}
+.hb svg{width:min(130vw,820px)}
+.hero>div:not(.hb){position:relative}
+.bless{font:500 22px "Cormorant Garamond",serif;color:var(--gd);letter-spacing:.12em}
+.names{font:400 clamp(46px,14vw,104px)/1.1 "Great Vibes",cursive;color:var(--rd);margin:14px 0}
+.names span{display:block}.names em{font:italic 500 .45em "Cormorant Garamond",serif;color:var(--gd)}
+.sub{letter-spacing:.3em;text-transform:uppercase;font-size:15px}
+.hd{font:600 26px "Cormorant Garamond",serif;margin:16px 0 22px;color:var(--mr)}
+.hint{margin-top:26px;font-size:14px;letter-spacing:.25em;text-transform:uppercase;color:var(--gd)}
+/* ===== COUPLE ===== */
+.cp{display:grid;grid-template-columns:1fr;gap:22px;justify-items:center}
+.cp .card{width:min(100%,660px);border-radius:140px 140px 18px 18px;padding:34px 18px 18px;background:var(--iv)}
+.cp img{display:block;width:min(100%,320px);height:auto;margin:12px auto 0;background:var(--iv)}
+.cp h3{font-size:30px}
+/* ===== PRE-WEDDING VIDEO ===== */
+.video-band{background:linear-gradient(var(--iv),var(--bl))}
+.video-frame{width:min(100%,860px);margin:0 auto;padding:8px;border:1px solid var(--gd);border-radius:12px;background:rgba(255,250,240,.92);box-shadow:0 10px 28px rgba(94,15,28,.12)}
+.video-frame iframe{display:block;width:100%;aspect-ratio:16/9;border:1px solid rgba(184,137,59,.55);border-radius:7px}
+/* ===== COUNTDOWN ===== */
+.cdw{background:linear-gradient(var(--bl),var(--iv))}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:520px;margin:auto}
+.cd div{border:1px solid var(--gd);border-radius:14px 14px 40px 40px;padding:14px 4px;background:rgba(255,250,240,.9)}
+.cd b{display:block;font-size:clamp(30px,9vw,48px);line-height:1.1}.cd small{font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+.jm{font:400 clamp(44px,12vw,80px) "Great Vibes",cursive;color:var(--rd)}
+/* ===== VENUE ===== */
+.vg{display:grid;gap:14px;grid-template-columns:1fr;margin-bottom:22px}
+.vg h3{font-size:22px}.vg p{font-size:16px}
+.map{display:block;margin:22px auto 0;max-width:560px;padding:8px;border:1px solid var(--gd);border-radius:18px;overflow:hidden;background:rgba(255,250,240,.92);box-shadow:0 10px 28px rgba(94,15,28,.12)}
+.map-label{display:flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 8px;color:var(--rd);font:500 13px Jost,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.map-label::before{content:"";width:7px;height:7px;flex:none;border:2px solid var(--gd);border-radius:50%;background:var(--rd);box-shadow:0 0 0 3px rgba(184,137,59,.18)}
+.map iframe{display:block;width:100%;height:clamp(260px,68vw,360px);border:1px solid rgba(184,137,59,.55);border-radius:11px}
+/* ===== EVENTS ===== */
+.tl{list-style:none;padding:0;position:relative;text-align:left;max-width:560px;margin:auto}
+.tl::before{content:"";position:absolute;left:21px;top:10px;bottom:10px;width:2px;background:repeating-linear-gradient(var(--gd) 0 6px,transparent 6px 12px)}
+.tl li{position:relative;padding:0 0 26px 62px}
+.tl i{position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--rd);color:var(--lg);border:2px solid var(--gd);display:grid;place-items:center;font:600 20px "Cormorant Garamond",serif;font-style:normal}
+.tl h3{font-size:28px}.tl p{font-size:16px}.tl a{color:var(--rd);display:inline-block;min-height:44px;padding-top:8px}
+/* ===== ALBUM ===== */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gal button{padding:0;border:6px solid #fffaf0;outline:1px solid var(--gd);background:none;cursor:pointer;overflow:hidden;border-radius:4px;aspect-ratio:3/4}
+.gal button.w{grid-column:span 2;aspect-ratio:3/2}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
+#lb{position:fixed;inset:0;z-index:90;background:rgba(40,8,14,.94);display:none;align-items:center;justify-content:center;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+#lb.on{display:flex}
+#li{max-width:96vw;max-height:80vh;object-fit:contain}
+#lb button{position:absolute;min-width:48px;min-height:48px;border:1px solid var(--gd);background:rgba(94,15,28,.8);color:var(--lg);border-radius:50%;font-size:24px;cursor:pointer}
+#lx{top:14px;right:14px}#lp{left:8px;top:50%}#ln{right:8px;top:50%}
+#lc{position:absolute;bottom:20px;color:var(--lg);font-size:16px;letter-spacing:.1em}
+/* ===== FOOTER ===== */
+footer{background:linear-gradient(var(--iv),var(--bl));padding:40px 20px 70px;text-align:center}
+footer img.sc2{display:block;width:min(300px,80vw);height:auto;margin:0 auto;background:transparent}
+footer h2{margin:8px 0}
+.copyright{margin-top:30px;color:var(--gd);font-size:13px}
+/* ===== EFFECT LAYERS ===== */
+#fp{position:absolute;left:0;top:0;width:100%;pointer-events:none;z-index:5;overflow:visible}
+.pl,.gl{position:fixed;inset:0;pointer-events:none;z-index:6;overflow:clip}
+.pt{position:absolute;top:-6vh;width:13px;height:17px;background:linear-gradient(135deg,#d63a4d,var(--pr));border-radius:100% 0 100% 0;opacity:.7;animation:fall linear infinite;will-change:transform}
+@keyframes fall{0%{transform:translate3d(0,-6vh,0) rotate(0)}25%{transform:translate3d(30px,28vh,0) rotate(90deg)}50%{transform:translate3d(-22px,55vh,0) rotate(180deg)}75%{transform:translate3d(26px,80vh,0) rotate(270deg)}100%{transform:translate3d(0,108vh,0) rotate(360deg)}}
+.gt{position:absolute;width:12px;height:12px;background:var(--lg);clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%);opacity:0;animation:tw ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:.85;transform:scale(1)}}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:7}
+.ln{position:fixed;bottom:-70px;width:34px;height:46px;border-radius:40% 40% 30% 30%;background:radial-gradient(circle at 50% 60%,#fff1b8,#f0a63c 60%,#c56a1f);pointer-events:none;z-index:8;opacity:0;animation:rise 8s ease-out forwards;will-change:transform}
+@keyframes rise{0%{opacity:0;transform:translate3d(0,0,0)}12%{opacity:.95}100%{opacity:0;transform:translate3d(24px,-115vh,0)}}
+@media(min-width:700px){.cp,.vg{grid-template-columns:1fr 1fr}.vg{grid-template-columns:repeat(3,1fr)}.gal{grid-template-columns:repeat(3,1fr)}.gal button.w{grid-column:span 1;aspect-ratio:3/4}}
+@media(prefers-reduced-motion:reduce){.pl,.gl,#fx,#open{display:none}*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ===== CARICATURE SYMBOLS (each head drawn once, reused) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="gh" viewBox="0 0 100 110"><circle cx="19" cy="60" r="7" fill="#B07048"/><circle cx="81" cy="60" r="7" fill="#B07048"/><ellipse cx="50" cy="58" rx="31" ry="35" fill="#B87A4F"/><path d="M20 64C22 92 38 99 50 99S78 92 80 64C74 80 64 84 50 84S26 80 20 64Z" fill="#2B1B15"/><path d="M17 52C12 16 40 6 54 8C78 8 90 28 83 52C79 38 70 31 50 31S21 38 17 52Z" fill="#17100D"/><g fill="none" stroke="#1d1d1d" stroke-width="2.4"><rect x="25" y="49" width="20" height="14" rx="5"/><rect x="55" y="49" width="20" height="14" rx="5"/><path d="M45 54H55"/></g><circle cx="35" cy="56" r="2.6" fill="#1a0f0a"/><circle cx="65" cy="56" r="2.6" fill="#1a0f0a"/><circle cx="29" cy="70" r="5" fill="#e07a6a" opacity=".25"/><circle cx="71" cy="70" r="5" fill="#e07a6a" opacity=".25"/><path d="M38 76Q50 72 62 76" stroke="#2B1B15" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="M41 82Q50 90 59 82" stroke="#f4dcc8" stroke-width="2.6" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="bh" viewBox="0 0 100 110"><path d="M13 60C7 100 12 112 26 112H74C88 112 93 100 87 60C87 18 13 18 13 60Z" fill="#17100D"/><ellipse cx="50" cy="58" rx="30" ry="34" fill="#C98F66"/><path d="M18 58C16 20 50 10 50 10S84 20 82 58C76 38 62 28 50 28S24 38 18 58Z" fill="#17100D"/><path d="M50 10V28" stroke="#C98F66" stroke-width="1.5"/><g stroke="#1a0f0a" fill="none" stroke-linecap="round"><path d="M30 47Q37 43 44 47M56 47Q63 43 70 47" stroke-width="2"/><path d="M32 56Q38 51 44 56M56 56Q62 51 68 56" stroke-width="2.4"/></g><circle cx="38" cy="57" r="2.6" fill="#1a0f0a"/><circle cx="62" cy="57" r="2.6" fill="#1a0f0a"/><circle cx="50" cy="38" r="2.8" fill="#C41E3A"/><circle cx="20" cy="72" r="3.4" fill="#E9CF93"/><circle cx="80" cy="72" r="3.4" fill="#E9CF93"/><circle cx="31" cy="70" r="5" fill="#e0707a" opacity=".3"/><circle cx="69" cy="70" r="5" fill="#e0707a" opacity=".3"/><path d="M40 76Q50 87 60 76Q50 79 40 76Z" fill="#A02040"/></symbol>
+<g id="G"><rect x="43" y="92" width="14" height="22" fill="#B87A4F"/><path d="M14 170L20 114Q50 102 80 114L86 170Z" fill="#F6EEDC" stroke="#D8C9A8"/><g fill="#B8893B"><circle cx="50" cy="126" r="2.4"/><circle cx="50" cy="140" r="2.4"/><circle cx="50" cy="154" r="2.4"/></g><path d="M50 112V170" stroke="#D8C9A8"/><use href="#gh" width="100" height="110"/></g>
+<g id="B"><rect x="43" y="92" width="14" height="22" fill="#C98F66"/><path d="M22 114Q50 102 78 114L74 136H26Z" fill="#B01E2F"/><path d="M26 134H74L94 170H6Z" fill="#B01E2F"/><path d="M9 163H91" stroke="#E9CF93" stroke-width="3"/><path d="M24 114L42 136L38 170" stroke="#E9CF93" stroke-width="2.4" fill="none"/><use href="#bh" width="100" height="110"/></g>
+</defs></svg>
+
+<!-- ===== OPENING REVEAL ===== -->
+<div id="open" role="dialog" aria-label="Invitation envelope">
+ <div class="env"><div class="flap"></div><span class="ring"></span><button id="seal" aria-label="Open the invitation">S&amp;P</button></div>
+ <p>Tap the seal to open</p><div class="fl"></div>
+</div>
+
+<!-- ===== PLANE FLIGHT PATH ===== -->
+<svg id="fp" aria-hidden="true"><defs><clipPath id="cp"><rect id="cr" x="0" y="0" width="4000" height="100"/></clipPath></defs>
+<path id="bs" fill="none" stroke="#B8893B" stroke-opacity=".4" stroke-width="3.4" stroke-linecap="round" stroke-dasharray="0.1 15"/>
+<path id="tr" clip-path="url(#cp)" fill="none" stroke="#B8893B" stroke-opacity=".6" stroke-width="3.4" stroke-dasharray="12 9"/>
+<g id="pl" opacity=".6"><path d="M34 0L-34 -20L-18 0L-34 20Z" fill="#F6E4B5"/><path d="M34 0L-34 -20L-18 0Z" fill="#B8893B"/><path d="M34 0L-18 0" stroke="#8E1B2B" stroke-width="1.5"/><path d="M0 6C-9 -2-7 -9 0 -5 7 -9 9 -2 0 6Z" transform="translate(-50 0) scale(.8)" fill="#B01E2F"/></g></svg>
+
+<!-- ===== EFFECT LAYERS ===== -->
+<div class="pl" id="pl2" aria-hidden="true"></div><div class="gl" id="gl" aria-hidden="true"></div><canvas id="fx" aria-hidden="true"></canvas>
+
+<main>
+<!-- ===== HERO ===== -->
+<header class="hero" id="top">
+ <div class="hb" id="hb" aria-hidden="true"><svg viewBox="-100 -100 200 200" fill="none" stroke="#B8893B" stroke-width=".5"><circle r="95"/><circle r="80"/><circle r="55"/><circle r="30"/><g id="pt"><path d="M0-95Q10-70 0-55Q-10-70 0-95ZM0-80Q16-60 0-30Q-16-60 0-80Z"/></g><use href="#pt" transform="rotate(30)"/><use href="#pt" transform="rotate(60)"/><use href="#pt" transform="rotate(90)"/><use href="#pt" transform="rotate(120)"/><use href="#pt" transform="rotate(150)"/><use href="#pt" transform="rotate(180)"/><use href="#pt" transform="rotate(210)"/><use href="#pt" transform="rotate(240)"/><use href="#pt" transform="rotate(270)"/><use href="#pt" transform="rotate(300)"/><use href="#pt" transform="rotate(330)"/></svg></div>
+ <div>
+  <p class="bless">Shree Ganeshaya Namah</p>
+  <h1 class="names"><span>Shouvik Panja</span><em>&amp;</em><span>Pratiksha Sarkar</span></h1>
+  <p class="sub">Wedding Invitation</p>
+  <p class="hd">28th November, 2026</p>
+  <a class="btn" href="#cd">Save the Date</a>
+  <p class="hint">Scroll</p>
+ </div>
+</header>
+
+<!-- ===== THE COUPLE ===== -->
+<section class="sc" id="couple">
+ <p class="eb rv">With Blessings</p><h2 class="rv">The Couple</h2>
+ <div class="cp">
+  <article class="card rv" style="--i:1"><p class="eb">The Groom</p><h3>Shouvik Panja</h3><img src="groom-portrait.jpg" alt="Shouvik in a traditional Bengali wedding panjabi and topor" width="1024" height="1536" fetchpriority="high"></article>
+  <article class="card rv" style="--i:2"><p class="eb">The Bride</p><h3>Pratiksha Sarkar</h3><img src="bride-portrait.jpg" alt="Pratiksha in a traditional Bengali red-and-gold bridal sari and mukut" width="1024" height="1536" loading="lazy"></article>
+ </div>
+</section>
+
+<!-- ===== PRE-WEDDING VIDEO ===== -->
+<section class="video-band">
+ <div class="sc">
+  <p class="eb rv">A Moment Together</p><h2 class="rv">Our Pre-Wedding Film</h2>
+  <div class="video-frame rv"><iframe src="https://www.youtube.com/embed/wsOd63ppW_I" title="Our Story (Shouvik &amp; Pratiksha) - Pre Wedding Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+ </div>
+</section>
+
+<!-- ===== COUNTDOWN ===== -->
+<section class="cdw"><div class="sc" id="cd">
+ <p class="eb rv">Counting Down</p><h2 class="rv">Our Big Day</h2>
+ <div class="cd rv" id="cdg" aria-live="off"><div><b id="d">0</b><small>Days</small></div><div><b id="h">0</b><small>Hours</small></div><div><b id="m">0</b><small>Mins</small></div><div><b id="s">0</b><small>Secs</small></div></div>
+</div></section>
+
+<!-- ===== VENUE ===== -->
+<section class="sc" id="venue">
+ <p class="eb rv">Join Us</p><h2 class="rv">Venue Details</h2>
+ <div class="vg">
+  <div class="card rv" style="--i:1"><h3>Date</h3><p>28th November, 2026</p></div>
+  <div class="card rv" style="--i:2"><h3>Time</h3><p>7:00 PM IST</p></div>
+  <div class="card rv" style="--i:3"><h3>Venue</h3><p>Parinoy The Banquet</p><p>N.H-60, beside Indian Oil Pump, Dharma, Habibpur, Midnapore, West Bengal 721101</p></div>
+ </div>
+ <div class="rv"><button class="btn o" id="cal" type="button">Add to Calendar</button><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=22.42923367959408%2C87.33529867478236" target="_blank" rel="noopener">Get Directions</a></div>
+ <div class="map rv" aria-label="Map showing Parinoy The Banquet">
+  <div class="map-label">Parinoy The Banquet · Midnapore</div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.9944774832247!2d87.33529867478236!3d22.42923367959408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d5b93697d8181%3A0xbf7673180e5a6e70!2sParinoy%20The%20Banquet%20%7CBest%20Banquet%20Hall%20In%20Midnapore%7CBest%20Marriage%20Hall%7C%20Party%20Hall!5e0!3m2!1sen!2sin!4v1792755852811!5m2!1sen!2sin" title="Parinoy The Banquet on Google Maps" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+ </div>
+</section>
+
+<!-- ===== EVENTS ===== -->
+<section class="sc" id="events">
+ <p class="eb rv">Celebrations</p><h2 class="rv">Events</h2>
+ <ol class="tl">
+  <li class="rv"><i>1</i><h3>Haldi</h3><p>26 Nov 2026 &middot; Thursday</p><p>Own House, Sepoy Bazar, Midnapore</p></li>
+  <li class="rv"><i>2</i><h3>Wedding</h3><p>26 Nov 2026 &middot; Thursday</p><p>Shree Bishnu Mandir, Belda &amp; Shree Banquet Hall, Midnapore</p></li>
+  <li class="rv"><i>3</i><h3>Reception</h3><p>28 Nov 2026 &middot; Saturday &middot; 7:00 PM</p><p>Parinoy The Banquet, Dharma, Midnapore</p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=22.42923367959408%2C87.33529867478236" target="_blank" rel="noopener">Get Directions</a></li>
+ </ol>
+</section>
+
+<!-- ===== ALBUM ===== -->
+<section class="sc" id="album">
+ <p class="eb rv">Moments</p><h2 class="rv">Photo Album</h2>
+ <div class="gal">
+  <button class="rv" type="button"><img src="photo1.jpeg" alt="Shouvik and Pratiksha smiling at each other under green trees" style="object-position:50% 50%"></button>
+  <button class="rv" type="button" style="--i:1"><img src="photo4.jpeg" alt="The couple facing each other on a sunlit street with sunflowers" style="object-position:50% 45%"></button>
+  <button class="rv w" type="button"><img src="photo2.jpeg" alt="Pratiksha resting her head on Shouvik's shoulder in a park" style="object-position:29% 35%"></button>
+  <button class="rv w" type="button" style="--i:1"><img src="photo3.jpeg" alt="The couple walking hand in hand in front of a white marble palace" style="object-position:50% 30%"></button>
+  <button class="rv w" type="button" style="--i:2"><img src="photo5.jpeg" alt="The couple sitting close together in a colourful boat on a lake" style="object-position:50% 35%"></button>
+ </div>
+</section>
+</main>
+<div id="lb" role="dialog" aria-label="Photo viewer"><button id="lx" aria-label="Close">&times;</button><button id="lp" aria-label="Previous photo">&lsaquo;</button><img id="li" alt=""><button id="ln" aria-label="Next photo">&rsaquo;</button><span id="lc"></span></div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+ <img class="sc2 rv" src="bengali-wedding-couple-transparent.png" alt="Shouvik and Pratiksha in Bengali wedding attire" width="1300" height="1209" loading="lazy">
+ <h2 class="rv">Shouvik Panja &amp; Pratiksha Sarkar</h2>
+ <p class="rv">28th November, 2026</p><p class="rv">Parinoy The Banquet</p>
+ <p class="rv" style="margin-top:14px;font:500 24px 'Cormorant Garamond',serif;color:var(--rd)">With love, the Panja families</p>
+ <p class="rv" style="margin:14px 0 4px">+91 9434414260 (Aditya Kr. Panja)</p>
+ <div class="rv"><a class="btn" id="wa" target="_blank" rel="noopener" href="#">RSVP on WhatsApp</a><button class="btn o" id="lan" type="button">Release a Wish Lantern</button></div>
+ <p class="copyright rv">&copy; 2026 All rights reserved. For Tathagata Jana.</p>
+</footer>
+
+<script>
+(()=>{
+"use strict";
+const $=s=>document.querySelector(s),R=matchMedia("(prefers-reduced-motion:reduce)").matches,HT=document.documentElement;
+const MAPS="https://www.google.com/maps/dir/?api=1&destination=22.42923367959408%2C87.33529867478236";
+
+/* ===== SCROLL REVEAL ===== */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+
+/* ===== OPENING ===== */
+const op=$("#open");let started=0;
+function begin(){if(started)return;started=1;HT.classList.remove("lock");op.remove();effects()}
+function burst(){const e=$(".env");for(let i=0;i<22;i++){const s=document.createElement("i");s.className="sp";e.appendChild(s);const a=Math.random()*6.28,r=90+Math.random()*120;s.animate([{transform:"translate(0,0) scale(1.4)",opacity:1},{transform:`translate(${Math.cos(a)*r}px,${Math.sin(a)*r-40}px) scale(0)`,opacity:0}],{duration:1000+Math.random()*500,delay:500,easing:"ease-out",fill:"both"})}}
+if(R)begin();else $("#seal").addEventListener("click",()=>{op.classList.add("go");burst();setTimeout(()=>op.classList.add("fade"),1500);setTimeout(begin,2000)},{once:true});
+
+/* ===== PETALS + GLITTER ===== */
+function effects(){
+ if(R)return;
+ const P=$("#pl2"),G=$("#gl"),n=innerWidth<640?10:18;
+ for(let i=0;i<n;i++){const d=document.createElement("i");d.className="pt";d.style.cssText=`left:${Math.random()*100}%;animation-duration:${14+Math.random()*10}s;animation-delay:${-Math.random()*20}s;transform-origin:center;scale:${.7+Math.random()*.6}`;P.appendChild(d)}
+ for(let i=0;i<28;i++){const d=document.createElement("i");d.className="gt";d.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${4+Math.random()*5}s;animation-delay:${-Math.random()*6}s;${i%3?"":"background:#B8893B"}`;G.appendChild(d)}
+}
+
+/* ===== COUNTDOWN (fixed +05:30 IST) ===== */
+const T=Date.parse("2026-11-28T19:00:00+05:30");let ti;
+function tick(){let d=T-Date.now();if(d<=0){$("#cdg").innerHTML='<p class="jm">Just Married</p>';clearInterval(ti);return}
+ const s=Math.floor(d/1000);$("#d").textContent=Math.floor(s/86400);$("#h").textContent=Math.floor(s%86400/3600);$("#m").textContent=Math.floor(s%3600/60);$("#s").textContent=s%60}
+tick();ti=setInterval(tick,1000);
+$('a[href="#cd"]').addEventListener("click",e=>{e.preventDefault();$("#cd").scrollIntoView({behavior:R?"auto":"smooth"})});
+
+/* ===== CALENDAR (.ics) ===== */
+$("#cal").onclick=()=>{
+ const ev=(u,n,a,b,loc)=>["BEGIN:VEVENT","UID:"+u+"@wedding-invite","DTSTAMP:20261023T000000Z",a,b,"SUMMARY:"+n,"LOCATION:"+loc.replace(/,/g,"\\,"),"END:VEVENT"];
+ const L=[].concat(["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Wedding//EN"],
+ ev("haldi","Haldi","DTSTART;VALUE=DATE:20261126","DTEND;VALUE=DATE:20261127","Own House, Sepoy Bazar, Midnapore"),
+ ev("wedding","Wedding","DTSTART;VALUE=DATE:20261126","DTEND;VALUE=DATE:20261127","Shree Bishnu Mandir, Belda & Shree Banquet Hall, Midnapore"),
+ ev("reception","Reception","DTSTART:20261128T133000Z","DTEND:20261128T163000Z","Parinoy The Banquet, Dharma, Midnapore"),["END:VCALENDAR"]);
+ const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([L.join("\r\n")],{type:"text/calendar"}));a.download="wedding-events.ics";document.body.appendChild(a);a.click();a.remove()};
+
+/* ===== RSVP + LANTERNS ===== */
+$("#wa").href="https://wa.me/919434414260?text="+encodeURIComponent("Hi, I will attend the wedding of Pratiksha Sarkar and Shouvik Panja.");
+$("#lan").onclick=()=>{for(let i=0;i<3;i++){const l=document.createElement("i");l.className="ln";l.style.left=(18+i*30+Math.random()*10)+"%";l.style.animationDelay=i*.7+"s";document.body.appendChild(l);setTimeout(()=>l.remove(),9500)}};
+
+/* ===== LIGHTBOX ===== */
+const gi=[...document.querySelectorAll(".gal button")],lb=$("#lb"),li=$("#li");let ci=0,sx=0;
+function show(i){ci=(i+gi.length)%gi.length;const im=gi[ci].firstElementChild;li.src=im.getAttribute("src");li.alt=im.alt;$("#lc").textContent=(ci+1)+" / "+gi.length}
+gi.forEach((b,i)=>b.onclick=()=>{show(i);lb.classList.add("on");$("#lx").focus()});
+const close=()=>{lb.classList.remove("on");gi[ci].focus()};
+$("#lx").onclick=close;$("#lp").onclick=()=>show(ci-1);$("#ln").onclick=()=>show(ci+1);
+lb.addEventListener("click",e=>{if(e.target===lb)close()});
+lb.addEventListener("touchstart",e=>sx=e.touches[0].clientX,{passive:true});
+lb.addEventListener("touchend",e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(ci+(d<0?1:-1))},{passive:true});
+addEventListener("keydown",e=>{if(!lb.classList.contains("on"))return;if(e.key==="Escape")close();if(e.key==="ArrowLeft")show(ci-1);if(e.key==="ArrowRight")show(ci+1)});
+
+/* ===== PAPER-PLANE FLIGHT PATH ===== */
+const bs=$("#bs"),tr=$("#tr"),pl=$("#pl"),cr=$("#cr"),fp=$("#fp"),hb=$("#hb");let L=1,DH=1;
+function build(){DH=document.documentElement.scrollHeight;const W=innerWidth,n=Math.max(4,Math.round(DH/650));let d="M"+W/2+" 0",px=W/2;
+ for(let i=0;i<n;i++){const y0=DH*i/n,y1=DH*(i+1)/n,x=i%2?W*.1:W*.9,k=(y1-y0)/2;d+=`C${px} ${y0+k} ${x} ${y1-k} ${x} ${y1}`;px=x}
+ fp.setAttribute("viewBox",`0 0 ${W} ${DH}`);fp.style.height=DH+"px";bs.setAttribute("d",d);tr.setAttribute("d",d);cr.setAttribute("height",DH);L=bs.getTotalLength();upd()}
+function upd(){
+ const y=scrollY+innerHeight*.42;let lo=0,hi=L;
+ for(let i=0;i<14;i++){const m=(lo+hi)/2;bs.getPointAtLength(m).y<y?lo=m:hi=m}
+ const p=bs.getPointAtLength(lo),q=bs.getPointAtLength(Math.min(L,lo+3)),a=Math.atan2(q.y-p.y,q.x-p.x)*180/Math.PI;
+ pl.setAttribute("transform",`translate(${p.x} ${p.y}) rotate(${a})`);
+ cr.setAttribute("transform",`translate(0 ${p.y-DH})`);
+ if(!R)hb.style.transform=`translate3d(0,${scrollY*.35}px,0)`}
+let tk=0;addEventListener("scroll",()=>{if(!tk){tk=1;requestAnimationFrame(()=>{tk=0;upd()})}},{passive:true});
+let rt;const rb=()=>{clearTimeout(rt);rt=setTimeout(build,120)};
+addEventListener("resize",rb);new ResizeObserver(rb).observe(document.body);addEventListener("load",build);build();
+
+/* ===== CANDLE-GLOW CURSOR / TAP RIPPLE ===== */
+const cv=$("#fx"),cx=cv.getContext("2d");let pts=[],run=0,w,h;
+function rs(){const r=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;cv.width=w*r;cv.height=h*r;cx.setTransform(r,0,0,r,0,0)}
+addEventListener("resize",rs);rs();
+function go(){if(!run&&!R){run=1;requestAnimationFrame(draw)}}
+addEventListener("pointermove",e=>{if(e.pointerType!=="mouse")return;pts.push({x:e.clientX,y:e.clientY,t:performance.now()});if(pts.length>16)pts.shift();go()},{passive:true});
+addEventListener("pointerdown",e=>{if(e.pointerType==="mouse")return;pts.push({x:e.clientX,y:e.clientY,t:performance.now(),rip:1});go()},{passive:true});
+function draw(now){cx.clearRect(0,0,w,h);pts=pts.filter(p=>now-p.t<(p.rip?900:550));
+ pts.forEach((p,i)=>{const life=p.rip?900:550,a=1-(now-p.t)/life;
+  if(p.rip){cx.strokeStyle=`rgba(232,170,70,${a*.55})`;cx.lineWidth=2;cx.beginPath();cx.arc(p.x,p.y,6+(1-a)*60,0,6.283);cx.stroke()}
+  else{const big=i===pts.length-1,r=(big?34:20)*(.5+a*.5)*(1+.08*Math.sin(now/55)),g=cx.createRadialGradient(p.x,p.y,0,p.x,p.y,r);
+   g.addColorStop(0,`rgba(255,200,110,${a*.55})`);g.addColorStop(1,"rgba(255,170,70,0)");cx.fillStyle=g;cx.beginPath();cx.arc(p.x,p.y,r,0,6.283);cx.fill()}});
+ if(pts.length)requestAnimationFrame(draw);else{run=0;cx.clearRect(0,0,w,h)}}
+})();
+</script>
+</body>
+</html>
