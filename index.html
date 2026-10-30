@@ -14,7 +14,7 @@ Venue: Sree Banquet and Lodge
 Map: Sree Banquet and Lodge, as shown in the supplied Google Maps embed
 Families: With love, the Sarkar families
 RSVP: +91 9434509715 (Swapan kr. Sarkar)
-Haldi | 26 Nov 2026 | Thursday | Own House, Sepoy Bazar, Midnapore
+Haldi | 26 Nov 2026 | Thursday | Own House, Ashokenagar, Midnapore
 Wedding | 26 Nov 2026 | Thursday | Shree Bishnu Mandir, Belda & Shree Banquet Hall, Midnapore
 Wedding Reception | 26 Nov 2026 | Thursday | 7:00 PM | Sree Banquet and Lodge
 -->
@@ -191,7 +191,7 @@ footer h2{margin:8px 0}
  <div class="vg">
   <div class="card rv" style="--i:1"><h3>Date</h3><p>26th November, 2026</p></div>
   <div class="card rv" style="--i:2"><h3>Time</h3><p>7:00 PM IST</p></div>
-  <div class="card rv" style="--i:3"><h3>Venue</h3><p>Sree Banquet and Lodge</p></div>
+  <div class="card rv" style="--i:3"><h3>Venue</h3><p>Sree Banquet and Lodge</p><p>Ashokenagar, Midnapore Railway Station Rd, Ashok Nagar, West, Midnapore, West Bengal 721101</p></div>
  </div>
  <div class="rv"><button class="btn o" id="cal" type="button">Add to Calendar</button><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sree%20Banquet%20and%20Lodge" target="_blank" rel="noopener">Get Directions</a></div>
  <div class="map rv" aria-label="Map showing Sree Banquet and Lodge">
@@ -204,7 +204,7 @@ footer h2{margin:8px 0}
 <section class="sc" id="events">
  <p class="eb rv">Celebrations</p><h2 class="rv">Events</h2>
  <ol class="tl">
-  <li class="rv"><i>1</i><h3>Haldi</h3><p>26 Nov 2026 &middot; Thursday</p><p>Own House, Sepoy Bazar, Midnapore</p></li>
+  <li class="rv"><i>1</i><h3>Haldi</h3><p>26 Nov 2026 &middot; Thursday</p><p>Own House, Ashokenagar, Midnapore</p></li>
   <li class="rv"><i>2</i><h3>Wedding</h3><p>26 Nov 2026 &middot; Thursday</p><p>Shree Bishnu Mandir, Belda &amp; Shree Banquet Hall, Midnapore</p></li>
   <li class="rv"><i>3</i><h3>Wedding Reception</h3><p>26 Nov 2026 &middot; Thursday &middot; 7:00 PM</p><p>Sree Banquet and Lodge</p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Sree%20Banquet%20and%20Lodge" target="_blank" rel="noopener">Get Directions</a></li>
  </ol>
@@ -268,7 +268,7 @@ $('a[href="#cd"]').addEventListener("click",e=>{e.preventDefault();$("#cd").scro
 $("#cal").onclick=()=>{
  const ev=(u,n,a,b,loc)=>["BEGIN:VEVENT","UID:"+u+"@wedding-invite","DTSTAMP:20261023T000000Z",a,b,"SUMMARY:"+n,"LOCATION:"+loc.replace(/,/g,"\\,"),"END:VEVENT"];
  const L=[].concat(["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Wedding//EN"],
- ev("haldi","Haldi","DTSTART;VALUE=DATE:20261126","DTEND;VALUE=DATE:20261127","Own House, Sepoy Bazar, Midnapore"),
+ ev("haldi","Haldi","DTSTART;VALUE=DATE:20261126","DTEND;VALUE=DATE:20261127","Own House, Ashokenagar, Midnapore"),
  ev("wedding","Wedding","DTSTART;VALUE=DATE:20261126","DTEND;VALUE=DATE:20261127","Shree Bishnu Mandir, Belda & Shree Banquet Hall, Midnapore"),
  ev("reception","Wedding Reception","DTSTART:20261126T133000Z","DTEND:20261126T163000Z","Sree Banquet and Lodge"),["END:VCALENDAR"]);
  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([L.join("\r\n")],{type:"text/calendar"}));a.download="wedding-events.ics";document.body.appendChild(a);a.click();a.remove()};
