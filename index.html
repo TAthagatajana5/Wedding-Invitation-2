@@ -38,20 +38,20 @@ h2{font-size:clamp(34px,9vw,52px);margin:6px 0 28px}
 .rv.in{opacity:1;transform:none}
 .card{background:rgba(255,250,245,.92);border:1px solid var(--gd);border-radius:18px;padding:22px 18px}
 /* ===== OPENING ===== */
-#open{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at 50% 40%,var(--alata),var(--mr) 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;color:var(--lg);transition:opacity .5s ease}
+#open{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at 50% 40%,#7d1a2c,#5E0F1C 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;color:#E9CF93;transition:opacity .5s ease}
 #open.fade{opacity:0}
 #open p{letter-spacing:.2em;text-transform:uppercase;font-size:14px}
-.env{position:relative;width:min(300px,80vw);height:min(200px,53vw);background:var(--petal);border:2px solid var(--gd);border-radius:6px;perspective:700px}
-.flap{position:absolute;left:0;right:0;top:0;height:60%;background:var(--turmeric-bright);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .7s ease .35s;z-index:2}
+.env{position:relative;width:min(300px,80vw);height:min(200px,53vw);background:#f3e2c0;border:2px solid #B8893B;border-radius:6px;perspective:700px}
+.flap{position:absolute;left:0;right:0;top:0;height:60%;background:#e6cf9c;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .7s ease .35s;z-index:2}
 .go .flap{transform:rotateX(180deg)}
-#seal{position:absolute;left:50%;top:60%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;border:2px solid var(--lg);background:radial-gradient(circle at 35% 30%,var(--lotus-pink),var(--rd));color:var(--iv);font:600 20px "Cormorant Garamond",serif;cursor:pointer;z-index:3;transition:transform .4s ease,opacity .5s ease .6s}
-#seal::after{content:"";position:absolute;inset:-12px;border-radius:50%;background:radial-gradient(circle,rgba(240,203,69,.9),transparent 70%);opacity:0;transition:opacity .4s;z-index:-1}
+#seal{position:absolute;left:50%;top:60%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;border:2px solid #E9CF93;background:radial-gradient(circle at 35% 30%,#d33a4c,#8E1B2B);color:#E9CF93;font:600 20px "Cormorant Garamond",serif;cursor:pointer;z-index:3;transition:transform .4s ease,opacity .5s ease .6s}
+#seal::after{content:"";position:absolute;inset:-12px;border-radius:50%;background:radial-gradient(circle,rgba(255,214,120,.9),transparent 70%);opacity:0;transition:opacity .4s;z-index:-1}
 .go #seal{transform:scale(1.15);opacity:0}.go #seal::after{opacity:1}
-.ring{position:absolute;left:50%;top:60%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;border:2px solid var(--lg);opacity:0;pointer-events:none}
+.ring{position:absolute;left:50%;top:60%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;border:2px solid #E9CF93;opacity:0;pointer-events:none}
 .go .ring{animation:rg 1s ease-out .2s both}
 @keyframes rg{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(9)}}
-.sp{position:absolute;left:50%;top:60%;width:8px;height:8px;background:var(--lg);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);opacity:0}
-.fl{position:absolute;inset:0;background:var(--petal);opacity:0;pointer-events:none}
+.sp{position:absolute;left:50%;top:60%;width:8px;height:8px;background:#E9CF93;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);opacity:0}
+.fl{position:absolute;inset:0;background:#fff8e6;opacity:0;pointer-events:none}
 .go~.fl{animation:fh .6s ease .9s both}
 @keyframes fh{0%{opacity:0}40%{opacity:.5}100%{opacity:0}}
 /* ===== HERO ===== */
@@ -167,8 +167,8 @@ footer h2{margin:8px 0}
 <section class="sc" id="couple">
  <p class="eb rv">With Blessings</p><h2 class="rv">The Couple</h2>
  <div class="cp">
-  <article class="card rv" style="--i:1"><p class="eb">The Groom</p><h3>Shouvik Panja</h3><img src="groom-portrait.jpg" alt="Shouvik in a traditional Bengali wedding panjabi and topor" width="1024" height="1536" fetchpriority="high"></article>
-  <article class="card rv" style="--i:2"><p class="eb">The Bride</p><h3>Pratiksha Sarkar</h3><img src="bride-portrait.jpg" alt="Pratiksha in a traditional Bengali red-and-gold bridal sari and mukut" width="1024" height="1536" loading="lazy"></article>
+  <article class="card rv" style="--i:1"><p class="eb">The Groom</p><h3>Shouvik Panja</h3><img src="groom-portrait.png" alt="Shouvik in a traditional Bengali wedding panjabi and topor" width="1024" height="1536" fetchpriority="high"></article>
+  <article class="card rv" style="--i:2"><p class="eb">The Bride</p><h3>Pratiksha Sarkar</h3><img src="bride-portrait.png" alt="Pratiksha in a traditional Bengali red-and-gold bridal sari and mukut" width="1024" height="1536" loading="lazy"></article>
  </div>
 </section>
 
